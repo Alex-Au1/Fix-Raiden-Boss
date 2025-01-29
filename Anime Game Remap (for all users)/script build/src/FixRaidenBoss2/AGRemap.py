@@ -13,8 +13,8 @@
 #
 # Version: 1.0.0
 # Authors: Albert Gold#2696
-# Datetime Ran: Monday, January 27, 2025 06:15:07.262 AM UTC
-# Run Hash: b680b35a-734f-4aa0-ba9e-d78e87386916
+# Datetime Ran: Wednesday, January 29, 2025 12:06:04.485 PM UTC
+# Run Hash: c9df5d1f-9b98-40cd-a620-f0967a019c23
 # 
 # *******************************
 # ================
@@ -33,10 +33,10 @@
 #
 # ***** AG Remap Script Stats *****
 #
-# Version: 4.2.3
+# Version: 4.2.4
 # Authors: Albert Gold#2696, NK#1321
-# Datetime Compiled: Monday, January 27, 2025 06:15:07.262 AM UTC
-# Build Hash: 0faafebd-156d-4e7d-b6cc-f27706f144ab
+# Datetime Compiled: Wednesday, January 29, 2025 12:06:04.485 PM UTC
+# Build Hash: c1bbfa79-e470-4cdf-98b2-04dbc3a7a163
 #
 # *********************************
 #
@@ -10411,7 +10411,7 @@ class GIBuilder(ModTypeBuilder):
         :class:`ModType`
             The resultant :class:`ModType`
         """
-        return ModType("HuTao", re.compile(r"^\s*\[\s*TextureOverride((?!Cherry).)*(HuTao)((?!RemapBlend).)*Blend.*\s*\]"), 
+        return ModType("HuTao", re.compile(r"^\s*\[\s*TextureOverride((?!Cherry).)*(HuTao)((?!RemapBlend|Cherry).)*Blend.*\s*\]"), 
                      Hashes(map = {"HuTao": {"CherryHuTao"}}), Indices(map = {"HuTao": {"CherryHuTao"}}),
                      aliases = ["77thDirectoroftheWangshengFuneralParlor", "QiqiKidnapper"],
                      vgRemaps = VGRemaps(map = {"HuTao": {"CherryHuTao"}}),
@@ -10951,7 +10951,7 @@ class ModTypes(Enum):
     HuTao: :class:`ModType`
         **Hu Tao mods** :raw-html:`<br />`
 
-        Checks if the .ini file contains a section with the regex ``^\s*\[\s*TextureOverride((?!Cherry).)*(HuTao)((?!RemapBlend).)*Blend.*\s*\]``
+        Checks if the .ini file contains a section with the regex ``^\s*\[\s*TextureOverride((?!Cherry).)*(HuTao)((?!RemapBlend|Cherry).)*Blend.*\s*\]``
 
     Jean: :class:`ModType`
         **Jean mods** :raw-html:`<br />`
